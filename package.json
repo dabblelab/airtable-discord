@@ -10,6 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^12.5.3"
+    "airtable": "^0.11.1",
+    "airtable-fetch": "^0.1.2",
+    "discord.js": "^12.5.3",
+    "fetch": "^1.1.0",
+    "regex": "^0.1.1"
   }
 }
