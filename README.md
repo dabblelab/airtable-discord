@@ -1,9 +1,16 @@
-# POST data from Discord Bot through a Discord Channel to Airtable Base
+# POST, GET, UPDATE and DELETE data from Discord Bot through a Discord Channel to Airtable Base
 
 
 ## Description
 
-In this Repo, We are sending records to their respective fields in an Airtable Base' Table in realtime. For that, we are using a Discord Bot to act as a Channel of Input.
+In this Repo, We are performing:
+
+- POST
+- GET
+- UPDATE
+- DELETE 
+
+operations in an Airtable Base' Table in realtime. For that, we are using a Discord Bot to act as a Channel of Input.
 
 
 ## Airtable Base
