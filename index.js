@@ -62,7 +62,40 @@ client.on('message', async message => {
     }
 
   }
+  if (message.content === "update review") {
+    try {
+      base('Information').update("RECORD_ID", {
+        "UName": "Xname",
+        "Feedback": "Sample Feedback Updated"
+      }, function(err, record) {
+        if (err) {
+          console.error(err);
+          return;
+        }
+      });
+      client.channels.cache.get(`CHANNEL_ID`).send(`updated`)
+    }
+    catch (err) {
+      console.log(err);
+    }
 
+  }
+  if (message.content === "delete review") {
+    try {
+      base('Information').destroy('RECORD_ID', function(err, deletedRecord) {
+        if (err) {
+          console.error(err);
+          return;
+        }
+        console.log('Deleted record', deletedRecord.id);
+      });
+      client.channels.cache.get(`CHANNEL_ID`).send(`The record has been deleted.`)
+    }
+    catch (err) {
+      console.log(err);
+    }
+
+  }
 }
 );
 
